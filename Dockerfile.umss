@@ -9,6 +9,7 @@ FROM ckan/ckan-base:2.11
 
 # Bake in the custom umss extension
 COPY --chown=ckan-sys:ckan-sys src/ckanext-umss ${SRC_DIR}/ckanext-umss
+USER root
 RUN pip3 install ${SRC_DIR}/ckanext-umss
 
 # Standard ckan-docker additions (entrypoint scripts + patches), same as ckan/Dockerfile
