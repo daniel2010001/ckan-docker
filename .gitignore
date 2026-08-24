@@ -8,3 +8,9 @@ _solr/schema.xml
 _src/*
 local/*
 .env
+
+# Python build artifacts (extensiones)
+*.egg-info/
+__pycache__/
+*.pyc
+src/.cookiecutter_replay/
